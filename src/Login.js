@@ -3,7 +3,8 @@ import GitHubLogin from 'react-github-login';
 
 const onSuccess = response => {
   window.localStorage.setItem("code", response.code)
-  console.log(response)
+  console.log(response);
+  window.location.reload();
 };
 const onFailure = response => console.error(response);
 
